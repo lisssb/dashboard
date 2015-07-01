@@ -1,0 +1,19 @@
+<form>
+<label for="login___title">
+  Username:
+</label>
+{{input value=username}}
+<br>
+<div>
+<label for="post___body">
+  Password:
+</label>
+{{textarea value=password}}
+</div>
+</form>
+<button {{action "login" bubbles=false}}>
+  Login
+</button>
+
+
+{{outlet}}
