@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   //tagName: "div",
   //className : [],
-  /*didInsertElement: function(){
+  didInsertElement: function(){
     Ember.$(".gridster ul").gridster({
       widget_base_dimensions: [100, 55],
       widget_margins: [5, 5],
@@ -14,5 +14,5 @@ export default Ember.Component.extend({
         min_size: [1, 1]
       }
     }).data('gridster');
-  }*/
+  }
 });
