@@ -1,7 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  beforeModel(){
+    console.log(this);
+    //this.set('username', '999');
+  },
   model(){
-    //return []//'88880' //this.store.findAll('post');
+    var router = this;
+    var logged = this.get('username');
+    Ember.run.next(function() {
+      if (!logged) {
+        router.transitionTo('login');
+      } else {
+          router.transitionTo('gridster');
+        }
+    });
   }
 });

@@ -12,7 +12,7 @@ module.exports = function(environment) {
       'img-src': "'self' data:",
       'style-src': "'self' 'unsafe-inline'",
       //'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com",
-      //'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'font-src': "'self' data:",
     },
     EmberENV: {

@@ -24,6 +24,7 @@ export default Ember.Controller.extend({
       username : '',
       password : ''
     });
+    //var model = this.controllerFor('login');
     this.set("loginFailed", true);
   },
   success: function() {
